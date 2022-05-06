@@ -24,6 +24,8 @@ config](https://gokrazy.org/userguide/package-config/) for the
 ```
 mkdir -p extrafiles/github.com/gokrazy/breakglass/etc/
 # Note: At the moment only ed25519 and ecdsa keys work
+# example key creation command (ssh-keygen -o -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "gokrazy@gokrazy")
+
 cat ~/.ssh/id_*.pub \
   extrafiles/github.com/gokrazy/breakglass/etc/breakglass.authorized_keys
 
